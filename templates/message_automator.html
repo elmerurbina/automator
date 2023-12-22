@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+
+    <title>Automator</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/whatsapp_message_automator.css') }}">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+
+   
+    <div class="menu-icon" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        
+        </div>
+        
+        <ul class="menu"> 
+        <div class="dropDown-menu" id="dropDown-menu" >
+           <li>  <a class="menu-item" href="#main">Main page</a> </li>
+           <li>  <a class="menu-item" href="#history">History</a> </li>
+           <li>  <a class="menu-item" href="#about" >About us</a> </li>
+           <li>  <a class="menu-item" href="#contact">Contact us</a> </li>
+          
+        
+        
+    </ul>
+
+    
+
+    <h1>Message Automator</h1> 
+  
+
+    <p class="required">Fields marked with <b>" * "</b> are required.</p>
+
+        <div class="container">
+    <form method="POST" action="/send_message" id="main">
+        <label for ="phone_number" class="required">WhatsApp Number:</label>
+        <input type="text" id="phone_number" name="phone_number" placeholder="e.j. +505 77966272" required>
+        <a class="contact" href="contacts">Seleccionar numeros desde mi lista de contactos</a> <br>
+        <br>
+
+        <label for ="message" class="required">Message:</label>
+        <textarea id="message" name="message"  placeholder="Ingresa el mensaje personalizado que deseas enviar" required></textarea>
+         <a class="message" href="#history">Desea acceder al mensaje desde el historial? </a> <br>
+         <br>
+
+        <label for ="hour" class="required">Select Hour:</label>
+        <select id="hour" name="hour">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+        </select>
+        
+        <label for ="minute" class="required">select minute:</label>
+        <select id="minute" name="minute">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+          </select>
+        
+          <br> <br> 
+          
+          
+<div class="optional"></div>
+        <label for="file_path" class="optional">File Path (if apply):</label>
+        <input type="text" id="file_path" name="file_path" placeholder="e.j. path/to/image.jpg"><br>
+       
+        
+<br>
+<a href="/success">
+        <input class="bottom" type="submit" value="Send Message"> 
+    </a>    
+</form>  
+    </div>
+
+
+<div class="content-container" id="about" > 
+<p class="a">Bienvenido/a a [Message Automator] - Tu Solución de Mensajería Automatizada!</p> <br>
+   <p class="b"> [Message automator] es una potente herramienta de mensajería automatizada diseñada para agilizar tus procesos de comunicación. Con una interfaz web intuitiva,
+     este programa te permite programar y enviar mensajes de manera sencilla en momentos específicos, asegurando una comunicación efectiva y puntual con tu audiencia.</p>
+
+<p class="c"> Características Clave:</p>
+<ul class="a">
+    <li>Programa mensajes para entregas futuras: Planifica con antelación y llega a tus destinatarios cuando más importa.</li> <br>
+<li>Contenido de mensajes personalizable: Crea mensajes personalizados adaptados a las necesidades de tu audiencia.</li> <br>
+       <li> Integración perfecta: Basado en la biblioteca pywhatkit, [Message Automator] utiliza tecnología de vanguardia para automatizar las tareas de mensajería.
+       </li> <br>
+        
+       
+       <p> Ya sea que estés gestionando relaciones con clientes, enviando notificaciones importantes o mejorando tus esfuerzos de marketing, [Message Automator] te brinda la capacidad de conectarte con tu audiencia en tus propios términos.
+        Experimenta la comodidad de la mensajería automatizada hoy mismo con [Message Automator]."</p>
+   </ul>
+     <br>
+
+     
+</div>
+
+
+    <div class="contact-container" id="contact" > 
+        <i class="fa-solid fa-square-envelope"></i>
+        <a href="mailto: elmerurbina570@gmail.com" class="contact-link">Email</a>
+
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="whatsapp://send?phone=+50577966272" class="contact-link">WhatsApp</a>
+
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+50577966272" class="contact-link">+505 7796 6272 </a> 
+
+        
+       
+
+    </div>
+ 
+
+    <script src="{{ url_for('static', filename='js/Whatsapp_automator.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+   
+
+
+<p class="background"> imagen de fondo: <a class="freepik" href="https://www.freepik.com/free-vector/background-realistic-abstract-technology-particle_6938839.htm#query=automation%20background&position=44&from_view=keyword&track=ais&uuid=b66438d5-9d30-41f7-976f-74e0a9684c0b">Freepik</a>  </p>
+
+</body>
+</html>
