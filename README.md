@@ -1,17 +1,27 @@
-This is an open source project under the MIT license, I developed this project on 2023 to participate in the "Feria de ciencia y tecnologia - UNI, in Managua, Nicaragua", in which i won second place in the web pages category.
+This open-source project, developed under the MIT license, originated in 2023 as my entry in the "Feria de ciencia y tecnologia - UNI, Managua, Nicaragua," where it secured second place in the web pages category.
 
-The source code can be used for anyone who want to get starting with the basic of Python, Flask, JavaScript, HTML5, CSS3.
+The project's source code serves as an excellent resource for individuals seeking to grasp the fundamentals of Python, Flask, JavaScript, HTML5, and CSS3.
 
-This project is totally free to anyone who wish to use its functionalities, to send personalized automated messages via WhatsApp, those messages can be programmed to any hour and minute in a range of 24 hours, and the program will send the message automatically when the programmed time reched.
+Key Features:
+
+Free and Open to All: Utilize the functionalities of this project without any cost. It allows the automated sending of personalized messages via WhatsApp.
+
+Flexible Scheduling: Schedule messages to be sent at any hour and minute within a 24-hour range. The program automatically dispatches messages at the programmed times.
 
 ![image](https://github.com/elmerurbina/Automator/assets/142539327/801aa28f-06c7-4bd8-8a78-6ad30a31f1ff)
 
-When the time had reached the WhatsApp web will open automatically, it will load the number (isn't neccessary to have it on your contacts), the message will write automatically and after 15 seconds it will send automatically.
+How It Works:
+
+Automatic Opening: When the scheduled time arrives, WhatsApp Web opens automatically.
+
+Number Handling: The program dynamically loads the phone number (even if not in your contacts).
+
+Automated Messaging: The message is typed and sent automatically after a 15-second delay.
 
 
 ![image](https://github.com/elmerurbina/Automator/assets/142539327/eddb8d0c-379c-40f7-bbd5-6e8811d2a555)
 
-Feel free to use and modify the code according to your needs.
+Feel free to explore and modify the code according to your specific requirements. Best of luck on your projects!
 
 Thanks and best wishes!
 
